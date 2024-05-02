@@ -109,10 +109,12 @@ h1 > span {
 	margin: 0;
 	font-size: 15px;
 	font-weight: bold;
-	padding: 25px;
+	padding: 10px 25px;
 	background-color: white;
 	border: 3px solid black;
 	border-radius: 25px;
+	box-sizing: border-box;
+	min-height: 80px;
 }
 
 .selection-header h3 > span:last-child {
@@ -126,6 +128,28 @@ input:checked ~ .selection-info {
 
 input:checked + label > h3 {
 	border-radius: 25px 25px 0 0;
+}
+
+.selection-search h3 {
+	display: flex;
+	align-items: center;
+	margin: 10px 0 -15px;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 15px 25px;
+	background-color: white;
+	border: 3px solid black;
+	border-radius: 25px;
+}
+
+.selection-search input {
+	font-weight: inherit;
+	font-size: inherit;
+	margin-left: .25em;
+	min-width: 0;
+	border: none;
+	outline: none;
+	padding: 0;
 }
 
 .selection-info {
@@ -250,6 +274,7 @@ input:checked + label > h3 {
 	box-sizing: border-box;
 	width: 300px;
 	outline: none;
+	grid-column: 3;
 }
 
 .main-button:disabled {
@@ -380,6 +405,7 @@ input:checked + label > h3 {
 	font-size: 15px;
 	font-weight: 600;
 	padding-left: 10px;
+	white-space: pre-line;
 }
 
 .index-back {
