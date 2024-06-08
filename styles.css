@@ -322,7 +322,7 @@ input:checked + label > h3 {
 	font-size: 15px;
 	color: #C3E5FE;
 	font-weight: bold;
-	padding: 0 17px 17px;
+	padding: 5px 17px 17px;
 	border-radius: 10px 0 0 10px;
 	align-items: center;
 	min-width: 80px;
