@@ -344,7 +344,7 @@ input:checked + label > h3 {
 }
 
 .results-page > * {
-	margin: 0 50px 25px;
+	margin: 0 90px 25px 50px;
 }
 
 .var-title {
@@ -361,7 +361,7 @@ input:checked + label > h3 {
 	position: relative;
 	padding: 0 10px 10px;
 	box-sizing: border-box;
-	min-width: min(600px, calc(100% - 50px * 2));
+	min-width: min(600px, calc(100% - 50px - 90px));
 }
 
 .est-title::after {
@@ -408,7 +408,7 @@ input:checked + label > h3 {
 	white-space: pre-line;
 }
 
-.index-back {
+.index-back, .chart-link {
 	position: absolute;
 	right: -45px;
 	top: 0;
@@ -417,8 +417,12 @@ input:checked + label > h3 {
 	padding: 10px;
 }
 
-.est-title > .index-back {
+.est-title > .index-back, .est-title > .chart-link {
 	top: -10px;
+}
+
+.index-back:nth-of-type(2), .chart-link:nth-of-type(2) {
+	right: -90px;
 }
 
 .link {
