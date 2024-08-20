@@ -18,23 +18,28 @@
 </head>
 <body>
 	<header class="main-header-container main-selection-header">
+		<a class="home-link" href=" "><i class="fa-solid fa-house"></i></a>
 		<header class="main-header">
 			<label for="main-info-checkbox"><h1>Encuesta Sanitaria y Social: resultados descriptivos <span><i class="fa-solid fa-circle-info"></i></span></h1></label>
 			<input id="main-info-checkbox" type="checkbox">
-			<p class="main-info">Para obtener los resultados descriptivos de la ESSA pulse el botón Visualizar una vez haya seleccionado las variables, los estimadores, las segmentaciones y las mediciones.</p>
+			<p class="main-info">Para obtener los resultados descriptivos pulse el botón <b>'Visualizar'</b> una vez haya seleccionado las variables, los estimadores, las segmentaciones y las mediciones, accediendo así a otra página donde aparecerá un 'Índice de contenidos seleccionados' y, debajo, enlaces a cada una de las variables, estimadores y segmentaciones seleccionadas.
+
+Para facilitar la selección, <b>por defecto</b> vienen seleccionados los estimadores para las variables originales y las dicotomizadas, las segmentaciones de sexo y edad, y todas las mediciones. Si lo desea, puede seleccionar más o menos pulsando encima de estas.
+
+Para obtener <b>más información</b> sobre cada elemento pulse en la 'i' situada a la derecha de cada uno.</p>
 		</header>
-		<section class="downloads" style="display:none">
-			<span><i class="fa-solid fa-download"></i></span>
-			<a href="data/Tablas.zip" download>Tablas.zip</a>
-			<a href="data/Gráficas.zip" download>Gráficas.zip</a>
-		</section>
 	</header>
 	<main class="selection-page">
 		<section class="selection-block">
 			<div class="selection-header">
 				<input id="var-info-checkbox" type="checkbox">
-				<label for="var-info-checkbox"><h3><span>Seleccione las variables</span><span><i class="fa-solid fa-circle-info"></i></span></h3></label>
-				<p class="selection-info">Las variables se presentan divididas en distintos bloques de información. Busque el bloque deseado haciendo scroll. Una vez dentro, puede seleccionar varias variables.</p>
+				<label for="var-info-checkbox"><h3><span>Seleccione las variables del listado de abajo o búsquelas a continuación</span><span><i class="fa-solid fa-circle-info"></i></span></h3></label>
+				<p class="selection-info">Las variables se agrupan en bloques y subbloques de información. Encuentre el bloque deseado haciendo scroll y, una vez seleccionado, puede seleccionar todos los subbloques o los de su interés.
+
+Para buscar, pulse en 'Buscador' e introduzca las palabras a buscar sin artículos ni conjunciones. Si introduce varias, el buscador las considerará todas a la vez. Por ejemplo, si introduce 'ejercicio físico', se seleccionarán automáticamente aquellos subbloques en los que en la descripción o etiquetas de las variables aparezcan ambas palabras. Además, usted puede deseleccionar aquel subbloque que no le interese pulsando de nuevo encima del mismo, e incluso añadir otros no seleccionados en la búsqueda. Una vez haya confirmado los subbloques, el siguiente paso es seleccionar los estimadores, las segmentaciones y las mediciones.</p>
+			</div>
+			<div class="selection-search">
+				<label><h3>Buscador:<input type="search"></input></h3></label>
 			</div>
 			<form id="var-selection" class="selection-form"></form>
 		</section>
@@ -53,7 +58,7 @@
 					<label for="seg-info-checkbox"><h3><span>Seleccione las segmentaciones</span><span><i class="fa-solid fa-circle-info"></i></span></h3></label>
 					<p class="selection-info">Se presentan los resultados descriptivos totales y según sexo. Además, puede elegir una segunda variable de estratificación como:
 
-- Edad: 16-24, 25-34, 35-44, 45-54, 55-64 y 65 o más años.
+- Edad: 16-24, 25-34, 35-44, 45-54, 55-64, 65-74 y 75 o más años.
 
 - Grado de urbanización (municipio de residencia, IECA/EUROSTAT): Urbano, Intermedio y Rural.
 
@@ -70,7 +75,7 @@
 				<form id="m-selection" class="selection-form"></form>
 			</section>
 			<a class="distr-link" href="#/evolution" target="_blank"><span>Ver descripción de las mediciones</span><span><i class="fa-solid fa-circle-info"></i></span></a>
-			<a class="distr-link" href="data/Muestras.zip" download><span>Descargar distribución de la muestra</span><span><i class="fa-solid fa-circle-info"></i></span></a>
+			<a class="distr-link" style="visibility: hidden" href="data/Muestras.zip" download><span>Descargar distribución de la muestra</span><span><i class="fa-solid fa-circle-info"></i></span></a>
 			<button class="main-button" disabled>Visualizar</button>
 		</div>
 	</main>
